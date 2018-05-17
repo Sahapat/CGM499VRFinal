@@ -1,22 +1,23 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VRStandardAssets.Utils;
-using UnityEngine.UI;
 
-public class InteracableBananaHandler : MonoBehaviour
+public class InteracableBoat : MonoBehaviour
 {
     [SerializeField] private VRInteractiveItem m_InteractiveItem;
     [SerializeField] private VRInput m_VRInput;
     private bool m_GazeOver;
     private MeshRenderer meshRenderer;
-
-    [SerializeField] private float respawnTime;
+    [SerializeField]private GameObject fixedBoat;
 
     private void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
+    }
+    private void Start()
+    {
+        fixedBoat.SetActive(false);
     }
     private void OnEnable()
     {
@@ -51,16 +52,10 @@ public class InteracableBananaHandler : MonoBehaviour
 
     private void HandleDown()
     {
-        if(m_GazeOver)
+        if (m_GazeOver)
         {
+            fixedBoat.SetActive(true);
             meshRenderer.enabled = false;
-
-            Invoke("RespawnObject", respawnTime);
         }
-    }
-    private void RespawnObject()
-    {
-        meshRenderer.enabled = true;
-        CancelInvoke();
     }
 }
