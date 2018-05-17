@@ -43,6 +43,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b606363e04e0b7b4aac90733aececa55, type: 2}
   - {fileID: 2100000, guid: 52d35594001cc93438cda6efc6cdf39b, type: 2}
