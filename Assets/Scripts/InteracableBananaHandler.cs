@@ -9,6 +9,8 @@ public class InteracableBananaHandler : MonoBehaviour
 {
     [SerializeField] private VRInteractiveItem m_InteractiveItem;
     [SerializeField] private VRInput m_VRInput;
+    [SerializeField] private Text text;
+
     private bool m_GazeOver;
     private MeshRenderer meshRenderer;
 
@@ -18,6 +20,7 @@ public class InteracableBananaHandler : MonoBehaviour
     {
         meshRenderer = GetComponent<MeshRenderer>();
     }
+
     private void OnEnable()
     {
         m_VRInput.OnDown += HandleDown;
@@ -35,6 +38,7 @@ public class InteracableBananaHandler : MonoBehaviour
         m_InteractiveItem.OnOver -= HandleOver;
         m_InteractiveItem.OnOut -= HandleOut;
     }
+
     private void HandleOut()
     {
         m_GazeOver = false;
@@ -51,13 +55,16 @@ public class InteracableBananaHandler : MonoBehaviour
 
     private void HandleDown()
     {
-        if(m_GazeOver)
+        if (m_GazeOver)
         {
             meshRenderer.enabled = false;
-
             Invoke("RespawnObject", respawnTime);
         }
+        
+        text.text = "Down";
+        text.color = Color.green;
     }
+
     private void RespawnObject()
     {
         meshRenderer.enabled = true;
