@@ -31,7 +31,6 @@ namespace CSaratakij
 
         Vector2 inputVector;
 
-        Vector3 offset;
         Vector3 direction;
         Vector3 perpendicularDirection;
 
@@ -149,8 +148,6 @@ namespace CSaratakij
             else {
                 if (isGazeOver) {
                     isPushing = true;
-                    offset = hits[0].transform.position - transform.position;
-
                     direction = (transform.position - hits[0].transform.position).normalized;
                     perpendicularDirection = Vector3.Cross(Vector3.up, direction).normalized;
                 }
