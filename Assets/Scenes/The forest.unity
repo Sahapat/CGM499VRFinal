@@ -8815,6 +8815,22 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 486588, guid: 6d017ef7b425061488e6627106852aff, type: 2}
   m_PrefabInternal: {fileID: 828583562}
+--- !u!1 &535046844 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 2}
+  m_PrefabInternal: {fileID: 964658757}
+--- !u!65 &535046845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535046844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6982409, y: 3.8988452, z: 7.3438764}
+  m_Center: {x: -0.060857594, y: 1.909919, z: -0.17113566}
 --- !u!1001 &539585850
 Prefab:
   m_ObjectHideFlags: 0
@@ -15063,15 +15079,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 425070, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -54
+      value: -45.21
       objectReference: {fileID: 0}
     - target: {fileID: 425070, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 425070, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -12
+      value: -4.71
       objectReference: {fileID: 0}
     - target: {fileID: 425070, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 2}
       propertyPath: m_LocalRotation.x
@@ -30192,7 +30208,7 @@ Prefab:
     - target: {fileID: 114007023245545406, guid: f7c4271049e3d114f886a495779a1567,
         type: 2}
       propertyPath: onQuestCompleted.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4098714034286702, guid: f7c4271049e3d114f886a495779a1567, type: 2}
       propertyPath: m_LocalPosition.x
@@ -30260,22 +30276,21 @@ Prefab:
         type: 2}
       propertyPath: onQuestCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 114719613108328274, guid: 00d8d5dfed1eff14bbfa4ef0be940363,
-        type: 2}
+      objectReference: {fileID: 535046844}
     - target: {fileID: 114007023245545406, guid: f7c4271049e3d114f886a495779a1567,
         type: 2}
       propertyPath: onQuestCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToScene
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 114007023245545406, guid: f7c4271049e3d114f886a495779a1567,
         type: 2}
       propertyPath: onQuestCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114007023245545406, guid: f7c4271049e3d114f886a495779a1567,
         type: 2}
       propertyPath: onQuestCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1277464143334144, guid: f7c4271049e3d114f886a495779a1567, type: 2}
       propertyPath: m_Name
