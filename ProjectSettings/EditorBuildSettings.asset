@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Temple.unity
     guid: 93778f17912dd544688f4812ceceec73
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 3ca8f821d1221c6408012df983c3f2bc
