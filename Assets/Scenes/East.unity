@@ -12312,6 +12312,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00d8d5dfed1eff14bbfa4ef0be940363, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1363088136 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114719613108328274, guid: 00d8d5dfed1eff14bbfa4ef0be940363,
+    type: 2}
+  m_PrefabInternal: {fileID: 1363088134}
+  m_Script: {fileID: 11500000, guid: bf1aee3fd51978f448fa73d79ebf2562, type: 3}
 --- !u!1001 &1365261641
 Prefab:
   m_ObjectHideFlags: 0
@@ -12905,6 +12911,7 @@ MonoBehaviour:
   m_InteractiveItem: {fileID: 1418820086}
   m_VRInput: {fileID: 1196870646}
   fixedBoat: {fileID: 1418820084}
+  questLogic: {fileID: 1363088136}
 --- !u!114 &1418820086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15556,7 +15563,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1695533533}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 12, y: 1, z: 24}
+  m_LocalPosition: {x: 0.85, y: 0.64, z: 24}
   m_LocalScale: {x: 0.7146806, y: 0.100558534, z: 0.3442678}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18638,7 +18645,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2061014380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16, y: 1, z: 10}
+  m_LocalPosition: {x: -0.78, y: 0.64, z: 10}
   m_LocalScale: {x: 0.7146806, y: 0.100558534, z: 0.3442678}
   m_Children: []
   m_Father: {fileID: 0}

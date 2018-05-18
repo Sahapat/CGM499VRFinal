@@ -23,7 +23,7 @@ public class InteracableBoat : MonoBehaviour
     }
     private void Start()
     {
-        fixedBoat.SetActive(false);
+        /* fixedBoat.SetActive(false); */
     }
     private void OnEnable()
     {
@@ -63,7 +63,7 @@ public class InteracableBoat : MonoBehaviour
             /* fixedBoat.SetActive(true); */
             /* meshRenderer.enabled = false; */
             if (!questLogic) { return; }
-            questLogic.GoToScene(4);
+            questLogic.GoToScene(3);
         }
     }
 }
