@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using VRStandardAssets.Utils;
 
+#if UNITY_EDITOR
+    using UnityEditor;
+#endif
+
 namespace CSaratakij
 {
     public class PushAbleObject : MonoBehaviour
@@ -34,7 +38,13 @@ namespace CSaratakij
         Vector3 direction;
         Vector3 perpendicularDirection;
 
-
+#if UNITY_EDITOR
+        void OnDrawGizmos() {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireCube(transform.position, size);
+            Handles.Label(transform.position, "Trigger Area");
+        }
+#endif
 
         void OnEnable()
         {

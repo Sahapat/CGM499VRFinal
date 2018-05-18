@@ -111,8 +111,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.94696796, z: 0.7003214}
-  m_Center: {x: -0, y: 0.02651602, z: 0.06412202}
+  m_Size: {x: 0.8856004, y: 0.7219531, z: 0.7003214}
+  m_Center: {x: 0.004350066, y: -0.007099688, z: 0.06412202}
 --- !u!114 &114275341508783740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,7 +138,7 @@ MonoBehaviour:
   moveForce: 90
   interactiveItem: {fileID: 114275341508783740}
   vrInput: {fileID: 0}
-  size: {x: 20, y: 20, z: 20}
+  size: {x: 2, y: 2, z: 2}
   layerMask:
     serializedVersion: 2
     m_Bits: 16384
