@@ -64,6 +64,7 @@ namespace CSaratakij
                 isPushing = false; 
             }
 
+            Debug.Log(isGazeOver);
             if (isPushing) {
 
                 var moveForceX = moveForce;
