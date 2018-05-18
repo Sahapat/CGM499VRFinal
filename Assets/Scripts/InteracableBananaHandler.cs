@@ -50,7 +50,8 @@ public class InteracableBananaHandler : MonoBehaviour
         if (m_GazeOver)
         {
             meshRenderer.enabled = false;
-            Invoke("RespawnObject", respawnTime);
+            gameObject.SetActive(false);
+            /* Invoke("RespawnObject", respawnTime); */
         }
     }
 
