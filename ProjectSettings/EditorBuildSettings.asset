@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/East.unity
     guid: b4948f878a363774586e30346d233309
   - enabled: 1
-    path: Assets/Scenes/Temple.unity
-    guid: 93778f17912dd544688f4812ceceec73
-  - enabled: 1
     path: Assets/Scenes/Desert.unity
     guid: e56aae24fbf5ded40b37f9455e759d8e
+  - enabled: 1
+    path: Assets/Scenes/Temple.unity
+    guid: 93778f17912dd544688f4812ceceec73
