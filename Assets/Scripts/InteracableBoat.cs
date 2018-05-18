@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRStandardAssets.Utils;
+using CSaratakij;
 
 public class InteracableBoat : MonoBehaviour
 {
@@ -11,13 +12,18 @@ public class InteracableBoat : MonoBehaviour
     private MeshRenderer meshRenderer;
     [SerializeField]private GameObject fixedBoat;
 
+    //Hacks
+    [SerializeField]
+    QuestLogic questLogic;
+
+
     private void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
     }
     private void Start()
     {
-        fixedBoat.SetActive(false);
+        /* fixedBoat.SetActive(false); */
     }
     private void OnEnable()
     {
@@ -54,8 +60,10 @@ public class InteracableBoat : MonoBehaviour
     {
         if (m_GazeOver)
         {
-            fixedBoat.SetActive(true);
-            meshRenderer.enabled = false;
+            /* fixedBoat.SetActive(true); */
+            /* meshRenderer.enabled = false; */
+            if (!questLogic) { return; }
+            questLogic.GoToScene(3);
         }
     }
 }
