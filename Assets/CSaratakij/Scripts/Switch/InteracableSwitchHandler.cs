@@ -13,6 +13,9 @@ namespace CSaratakij
         [SerializeField]
         VRInput vrInput;
 
+        [SerializeField]
+        GameObject door;
+
 
         bool isGazeOver;
 
@@ -65,6 +68,8 @@ namespace CSaratakij
             if (isGazeOver) {
                 audioSource.Play();
                 swichComponent.Toggle();
+
+                door.SetActive(false);
             }
         }
 
